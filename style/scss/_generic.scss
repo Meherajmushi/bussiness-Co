@@ -1,0 +1,70 @@
+@import "_mixin.scss";
+@import "_variable.scss";
+
+
+/* Add generic styles here! */
+
+/* CROSS BROWSER SCROLL BAR */
+/* The emerging W3C standard that is currently Firefox-only */
+
+$thumb: var(--bg-col-7);
+$background: var(--generic-white);
+
+// Works on Chrome/Edge/Safari
+::-webkit-scrollbar { width: 0px; }
+::-webkit-scrollbar-track { background: $background; }
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $thumb;
+    border: 1px solid $background;
+}
+// Works on Firefox
+// * { scrollbar-width: thin; }
+
+/* Generic body style */
+*{-webkit-tap-highlight-color: transparent;}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-website-text-color);
+    background-color: var(--website-primary-bg);
+}
+
+body[data-page-type="dashboard"] {
+    color: var(--primary-dashboard-text-color);
+    background-color: var(--dashboard-primary-bg);
+}
+
+// Styles For A Section Size
+[data-section="size"] {
+    max-width: 1240px;
+    margin: 0 auto 0 auto;
+}
+
+// Styles For Left-Right Side gap Of A Page/Section
+[data-gap="side-gap"] {
+    margin: 0 auto;
+    gap: 0 16px 0 16px;
+    width: calc(100% - 32px);
+
+    @include mediaQuery(744px) {
+        gap: 0 32px 0 32px;
+        width: calc(100% - 64px);
+    }
+}
+
+[data-padding="y-axis"] {
+	padding: 48px 0;
+	min-height: calc(100% - 96px);
+
+	@include mediaQuery(744px) {
+        padding: 64px 0;
+        min-height: calc(100% - 128px);
+	}
+	@include mediaQuery(1240px) {
+        padding: 96px 0 64px;
+        min-height: calc(100% - 160px);
+	}
+}
+
+

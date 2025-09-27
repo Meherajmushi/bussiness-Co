@@ -1,0 +1,82 @@
+#quality{
+    width: calc(100%);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-container{
+        width: 100%;
+        height: 60vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            width: 90%;
+            // border: 1px solid;
+            padding: 8px 16px;
+
+            .title-q{
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 700;
+                color: var(--generic-white);
+                text-transform: capitalize;
+                padding-bottom:10px ;
+            }
+
+            .lorem{
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                color: var(--generic-white);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    #black{
+        background-color: var(--generic-black);
+    }
+
+    #aqua{
+        background-color: #37c6c6;
+    }
+
+    #aqua-dark{
+        background-color: #077b7b;
+    }
+
+     @include mediaQuery(744px) {
+        gap: 0 32px 0 32px;
+        width: calc(100%);
+
+        flex-direction: row;
+        // flex-wrap: wrap;
+
+        .card-container{ 
+            height: 100%;
+
+            .card{
+                margin-left: 15px;
+
+                .title-q{
+                    font-size: 28px;
+                    line-height: 32px;
+                    padding-bottom: 26px;
+                }
+
+                .lorem{
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+
+        }
+    }
+    
+}
