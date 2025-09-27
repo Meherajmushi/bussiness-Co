@@ -132,6 +132,8 @@ body[data-page-type=dashboard] {
 }
 
 #header:hover {
+  -webkit-transition: 3s;
+  transition: 3s;
   background-color: #00ffff;
 }
 
@@ -384,7 +386,7 @@ body[data-page-type=dashboard] {
 
 #about {
   width: 100%;
-  height: calc(100% - 40px);
+  height: 100%;
   background-color: var(--generic-white);
   padding: 30px 0;
 }
@@ -404,10 +406,11 @@ body[data-page-type=dashboard] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 #about .about-container .icon {
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
 }
 #about .about-container .icon #hook-icon {
   width: 100%;
@@ -459,6 +462,9 @@ body[data-page-type=dashboard] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -483,13 +489,12 @@ body[data-page-type=dashboard] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  padding: 10px 0;
 }
 #learn-about .container-learn .details .title {
   font-size: 18px;
@@ -703,6 +708,9 @@ body[data-page-type=dashboard] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -727,13 +735,12 @@ body[data-page-type=dashboard] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  padding: 10px 0;
 }
 #communication .container-learn .details .title {
   font-size: 18px;
