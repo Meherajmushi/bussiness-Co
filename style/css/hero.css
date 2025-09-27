@@ -155,6 +155,7 @@ body[data-page-type=dashboard] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 #home-page .container .container-left {
   width: 100%;
@@ -383,11 +384,12 @@ body[data-page-type=dashboard] {
 
 #about {
   width: 100%;
-  height: 60vh;
+  height: calc(100% - 40px);
   background-color: var(--generic-white);
-  margin-top: 100px;
+  padding: 30px 0;
 }
 #about .about-container {
+  width: calc(100% - 32px);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,52 +398,50 @@ body[data-page-type=dashboard] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 #about .about-container .icon {
-  width: 200px;
+  width: 250px;
   height: 200px;
-  padding: 8px 0;
 }
 #about .about-container .icon #hook-icon {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #about .about-container .title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  text-transform: capitalize;
-  padding: 8px 0;
   color: var(--generic-black);
+  padding: 6px 4px;
 }
 #about .about-container .bio {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  padding: 12px 0;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: center;
   color: var(--generic-black);
+  padding: 6px 4px;
 }
 #about .about-container .button {
   padding: 8px 0;
 }
 #about .about-container .button .btn {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--generic-black);
   background-color: var(--generic-white);
-  padding: 6px 16px;
-  border: 1px solid #323131;
+  border: 1px solid var(--generic-black);
+  padding: 6px 18px;
 }
 
 #learn-about {
